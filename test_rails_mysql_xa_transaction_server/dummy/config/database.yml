@@ -1,0 +1,37 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: xa_ticket_system
+  pool: 5
+  username: ruby
+  password: ruby
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: xa_ticket_system_test
+  pool: 5
+  username: ruby
+  password: ruby
+  socket: /var/run/mysqld/mysqld.sock
+
+
+external_server:
+  development:
+    adapter: mysql2
+    host: 192.168.0.6
+    encoding: utf8
+    database: xa_ticket_system
+    pool: 5
+    username: ruby
+    password: ruby
+
+  test:
+    adapter: mysql2
+    host: 192.168.0.6
+    encoding: utf8
+    database: xa_ticket_system_test
+    pool: 5
+    username: ruby
+    password: ruby
